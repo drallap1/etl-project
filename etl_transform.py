@@ -26,7 +26,7 @@ def transform_data():
     transform_query = """
     SELECT p."userId" AS UserID, p.id AS PostID, p.title AS Title, p.body AS PostBody, u.name AS Name, u.username AS UserName, u.email AS EmailId
     FROM staging_posts p
-    JOIN staging_users u ON u.id = p."userId" limit 1;
+    JOIN staging_users u ON u.id = p."userId";
 """
 
     cursor.execute(transform_query)

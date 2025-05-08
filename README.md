@@ -25,3 +25,8 @@ This project demonstrates an ETL (Extract, Transform, Load) pipeline that:
 
 1. A metadata table can be created to track all the ingestion details.
 2. Based on the merge strategy during staging rows can be merged based on the primary keys.
+
+## Other details
+
+1. Docker engine must be running
+2. Run the docker-compose file using docker-compose up -d
